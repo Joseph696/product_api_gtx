@@ -18,9 +18,9 @@ class HttpService {
       List<ProductModel> productList = productListData.map((item) => ProductModel.fromJson(item)).toList();
       return productList;
     } else {
-      // throw Exception();
-      var data = response.body;
-      return productModelFromJson(data);
+       //throw Exception();
+       var data = response.body;
+       return productModelFromJson(data);
     }
   }
 }
